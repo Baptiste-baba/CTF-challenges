@@ -55,6 +55,8 @@ The project includes three levels:
 - **Medium**: For those looking for a bit more challenge.
 - **Hard**: Designed for experienced individuals seeking a difficult challenge.
 
+#### Please note: You must not look directly at the BTC code. Only from the browser or from another machine !
+
 Enjoy the hunt for the flags!
 
 # Node.js Installation Guide
