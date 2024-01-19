@@ -10,7 +10,26 @@ Follow these steps to access the three levels of the CTF:
 1. **Install Node.js**:
    - Ensure Node.js is installed on your system. For installation instructions, refer to the installation guide below.
 
-2. **Launch the Website Locally**:
+2. **Install project dependencies**:
+   - Once node.js is installed, you also need to run these commands in your terminal to install all the project's dependencies:
+     ```bash
+     npm install express
+     ```
+     ```bash
+     npm install mongodb
+     ```
+     ```bash
+     npm install bcrypt
+     ```
+     ```bash
+     npm install express-session
+     ```
+     ```bash
+     npm install connect-mongo
+     ```
+    - Une fois que tout est installé, vous pouvez vous lancer le projet
+     
+3. **Launch the Website Locally**:
    - Navigate to the directory where you've saved the "CTF_Project" folder.
    - Run the following command in your terminal:
      ```bash
@@ -21,7 +40,7 @@ Follow these steps to access the three levels of the CTF:
      The server has started! Port: 9000
      ```
 
-3. **Access the Challenges**:
+4. **Access the Challenges**:
    - Open your web browser and enter the following URL:
      ```
      http://localhost:9000/
