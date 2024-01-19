@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu CTF</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <div id="ctf-container" class="centered-content">
+        <div class="homeindex centered-box">
+            <% if (typeof message !== 'undefined' && message) { %>
+                <p><%= message %></p>
+            <% } %>
+            <h1>Welcome to Capture The Flag project !</h1>
+            <p>You will find just above the 3 levels of CTF project</p>
+            <div class="button-group">
+                <button class="ctf-button" id="ctf-easy"><a href="/login">CTF 1 (easy level)</a></button>
+                <button class="ctf-button" id="ctf-middle"></a>CTF 2 (middle level)</button>
+                <!-- /articles -->
+                <button class="ctf-button" id="ctf-hard"><a href="/ctf3">CTF 3 (hard level)</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
