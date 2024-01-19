@@ -28,9 +28,13 @@ Follow these steps to access the three levels of the CTF:
      ```
    - The website hosting the three CTF challenges should now be operational. You're all set to start the quest for the three flags!
 
-### Server Message
-After running `node app.js`, expect to see a message similar to this in your terminal:
+### Challenges
+The project includes three levels:
+- **Simple**: A great starting point for beginners.
+- **Medium**: For those looking for a bit more challenge.
+- **Hard**: Designed for experienced individuals seeking a difficult challenge.
 
+Enjoy the hunt for the flags!
 
 # Node.js Installation Guide
 
