@@ -1,0 +1,286 @@
+body {
+    background: #f0f4f7;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+#container {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.homeindex {
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type=text], input[type=password] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type=submit] {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #218838;
+}
+
+.btn {
+    color: #28a745;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn:hover {
+    color: #218838;
+}
+
+#username-error, #email-error, #password-strength, #password-confirm-error {
+    color: red;
+    font-size: 0.9em;
+}
+
+#ctf-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctf-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+
+.ctf-button:hover {
+    background-color: #2980b9;
+}
+
+#ctf-easy {
+    background-color: #2ecc71;
+}
+
+#ctf-easy:hover {
+    background-color: #27ae60;
+}
+
+#ctf-middle {
+    background-color: #f1c40f;
+}
+
+#ctf-middle:hover {
+    background-color: #f39c12;
+}
+
+#ctf-hard {
+    background-color: #e74c3c;
+}
+
+#ctf-hard:hover {
+    background-color: #c0392b;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered-box {
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memory-check-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.memory-check-title {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.memory-check-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+.memory-check-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.memory-check-button:hover {
+    background-color: #0056b3;
+}
+
+.memory-check-result {
+    margin-top: 20px;
+}
+
+.article-detail-header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.article-detail-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.article-detail-content {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-detail-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.article-detail-back-link {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.car-list-header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.car-list-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.car-card {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.car-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.car-card h2 {
+    margin: 10px 0;
+}
+
+.car-card-link {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}

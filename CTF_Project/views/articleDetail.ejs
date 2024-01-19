@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de <%= article.title %></title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <div class="article-detail-header">
+        <h1><%- article.title %></h1>
+    </div>
+    <div class="article-detail-container">
+        <div class="article-detail-content">
+            <img src="<%- article.image %>" alt="Image de <%- article.title %>">
+            <p><%- article.description %></p>
+        </div>
+        <a href="/articles" class="article-detail-back-link">Retour à la liste</a>
+    </div>
+</body>
+</html>
