@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Voitures</title>
+    <link rel="stylesheet" href="/style/style.css"> <!-- Assurez-vous que le chemin est correct -->
+</head>
+<body>
+    <div class="car-list-header">
+        <h1>Liste des Voitures</h1>
+        <form action="/articles" method="GET">
+            <input type="text" name="search" placeholder="Rechercher une voiture..." />
+            <button type="submit">Rechercher</button>
+        </form>
+        <% if (searchQuery) { %>
+            <p>Résultats de recherche pour : <%- searchQuery %></p> <!-- Ceci est vulnérable aux attaques XSS -->
+        <% } %>
+    </div>
+    <div class="car-list-container">
+        <% articles.forEach(function(article) { %>
+            <div class="car-card">
+                <img src="<%- article.image %>" alt="Image de <%- article.title %>">
+                <h2><%- article.title %></h2>
+                <p><%- article.description %></p>
+                <a href="/article/<%- article.id %>" class="car-card-link">Voir plus</a>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
