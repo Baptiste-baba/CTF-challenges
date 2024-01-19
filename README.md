@@ -12,6 +12,7 @@ Follow these steps to access the three levels of the CTF:
 
 2. **Install project dependencies**:
    - Once node.js is installed, you also need to run these commands in your terminal to install all the project's dependencies:
+   - 
      ```bash
      npm install express
      ```
