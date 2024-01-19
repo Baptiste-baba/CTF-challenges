@@ -1,58 +1,85 @@
 # CTF-challenges
 CTF Challenges for the Software Cybersecurity project
 
-# Installation de Node.js
+This Capture The Flag (CTF) project comprises three levels of difficulty: simple, medium, and hard, each with a unique flag to be discovered.
 
-Ce guide vous aidera à installer Node.js sur votre système. Les étapes varient selon le système d'exploitation que vous utilisez.
+## Quick Start
 
-## Windows et macOS
+Follow these steps to access the three levels of the CTF:
 
-### Étapes :
+1. **Install Node.js**:
+   - Ensure Node.js is installed on your system. For installation instructions, refer to the installation guide below.
 
-1. **Télécharger l'installateur** :
-   - Allez sur le site officiel de Node.js : [https://nodejs.org/](https://nodejs.org/).
-   - Choisissez entre la version LTS (Long Term Support) ou Current.
-   - Téléchargez l'installateur pour Windows ou macOS.
+2. **Launch the Website Locally**:
+   - Navigate to the directory where you've saved the "CTF_Project" folder.
+   - Run the following command in your terminal:
+     ```bash
+     node app.js
+     ```
+   - You should see a message indicating that the server has started, typically:
+     ```
+     The server has started! Port: 9000
+     ```
 
-2. **Exécuter l'installateur** :
-   - Ouvrez le fichier d'installation téléchargé.
-   - Suivez les instructions à l'écran. Les paramètres par défaut conviennent à la plupart des utilisateurs.
+3. **Access the Challenges**:
+   - Open your web browser and enter the following URL:
+     ```
+     http://localhost:9000/
+     ```
+   - The website hosting the three CTF challenges should now be operational. You're all set to start the quest for the three flags!
 
-3. **Vérifier l'installation** :
-   - Ouvrez un terminal (Invite de commande sur Windows, Terminal sur macOS).
-   - Tapez `node -v` pour vérifier la version de Node.js.
-   - Tapez `npm -v` pour vérifier que npm (Node Package Manager) est installé.
+### Server Message
+After running `node app.js`, expect to see a message similar to this in your terminal:
 
-## Linux (Debian et distributions basées sur Ubuntu)
 
-### Étapes :
+# Node.js Installation Guide
 
-1. **Ajouter le PPA de Node.js à votre système** :
-   - Ouvrez un terminal.
-   - Exécutez les commandes suivantes pour ajouter le PPA :
+This guide provides instructions for installing Node.js on your system. The steps vary depending on your operating system.
+
+## Windows and macOS
+
+### Steps:
+
+1. **Download the Installer**:
+   - Visit the official Node.js website: [https://nodejs.org/](https://nodejs.org/).
+   - Choose between the LTS (Long Term Support) and Current versions.
+   - Download the installer for Windows or macOS.
+
+2. **Run the Installer**:
+   - Open the downloaded installation file.
+   - Follow the on-screen instructions. The default settings are suitable for most users.
+
+3. **Verify the Installation**:
+   - Open a terminal (Command Prompt on Windows, Terminal on macOS).
+   - Type `node -v` to check the Node.js version.
+   - Type `npm -v` to ensure that npm (Node Package Manager) is installed.
+
+## Linux (Debian and Ubuntu-based distributions)
+
+### Steps:
+
+1. **Add Node.js PPA to Your System**:
+   - Open a terminal.
+   - Execute the following commands to add the PPA:
      ```bash
      curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
      ```
-     - Remplacez `setup_16.x` par `setup_14.x` si vous préférez installer la version 14.x LTS.
+     - Replace `setup_16.x` with `setup_14.x` if you prefer to install version 14.x LTS.
 
-2. **Installer Node.js** :
-   - Après avoir ajouté le PPA, installez Node.js en exécutant :
+2. **Install Node.js**:
+   - After adding the PPA, install Node.js by running:
      ```bash
      sudo apt-get install -y nodejs
      ```
 
-3. **Vérifier l'installation** :
-   - Vérifiez l'installation en exécutant :
+3. **Verify the Installation**:
+   - Confirm the installation by running:
      ```bash
      node -v
      npm -v
      ```
 
-## Problèmes et solutions
+## Troubleshooting
 
-- Si vous rencontrez des problèmes, vérifiez que votre chemin d'accès système est correctement configuré et que les variables d'environnement sont correctement définies.
-- Pour des problèmes spécifiques, consultez la documentation officielle de Node.js ou cherchez des solutions sur des forums tels que Stack Overflow.
-
----
-
-Ce fichier README.md vise à fournir des instructions claires et précises pour l'installation de Node.js. Si vous avez des suggestions ou des corrections à apporter, n'hésitez pas à soumettre une pull request ou à ouvrir une issue.
+- If you encounter any issues, ensure your system path is properly configured and environment variables are correctly set.
+- For specific problems, refer to the official Node.js documentation or seek solutions on forums like Stack Overflow.
